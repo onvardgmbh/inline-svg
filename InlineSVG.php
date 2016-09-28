@@ -5,8 +5,32 @@ namespace Onvardgmbh;
  * Inline SVG
  */
 class InlineSVG {
-	public static function fontAwesome( $id ) {
-		$svg = file_get_contents('./svg/anchor.svg')
-		return $svg;
+
+	public $svg;
+
+	public static function file( $file ) {
+		$object = new InlineSVG();
+		$object->svg = file_get_contents($file);
+		return $object;
+	}
+
+	public static function fontAwesome( $name ) {
+		$object = new InlineSVG();
+		$object->svg = file_get_contents(__DIR__ .'/svg/' . $name . '.svg');
+		return $object;
+	}
+
+	public function width($width) {
+		$this->svg = preg_replace('/(width=")\d*(")/', '${1}' . $width . '${2}', $this->svg);
+		return $this;
+	}
+
+	public function height($heigth) {
+		$this->svg = preg_replace('/(height=")\d*(")/', '${1}' . $heigth . '${2}', $this->svg);
+		return $this;
+	}
+
+	public function get() {
+		return $this->svg;
 	}
 }
