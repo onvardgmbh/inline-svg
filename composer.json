@@ -1,0 +1,22 @@
+{
+  "name": "onvardgmbh/inline-svg",
+  "version": "0.0.1",
+  "description": "Inline SVG",
+  "keywords": [
+    "svg"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/onvardgmbh/inline-svg",
+  "authors": [
+    {
+      "name": "Björn Hasse",
+      "homepage": "https://github.com/bjoernhasse",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Onvardgmbh\\": "/"
+    }
+  }
+}
