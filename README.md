@@ -31,7 +31,6 @@ use Onvardgmbh\InlineSVG;
 <?= InlineSVG::ionicons('ios-arrow-right')->get()?>
 </div>
 ```
-```
 
 ## width / height
 ```php
