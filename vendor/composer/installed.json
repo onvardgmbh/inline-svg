@@ -1,0 +1,54 @@
+[
+    {
+        "name": "driftyco/ionicons",
+        "version": "v2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/driftyco/ionicons.git",
+            "reference": "ecb4b806831005c25b97ed9089fbb1d7dcc0879c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/driftyco/ionicons/zipball/ecb4b806831005c25b97ed9089fbb1d7dcc0879c",
+            "reference": "ecb4b806831005c25b97ed9089fbb1d7dcc0879c",
+            "shasum": ""
+        },
+        "time": "2015-01-03 20:02:30",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Adam Bradley",
+                "email": "adam@drifty.com",
+                "homepage": "https://twitter.com/adamdbradley",
+                "role": "Developer"
+            },
+            {
+                "name": "Max Lynch",
+                "email": "max@drifty.com",
+                "homepage": "https://twitter.com/maxlynch",
+                "role": "Developer"
+            },
+            {
+                "name": "Ben Sperry",
+                "email": "ben@drifty.com",
+                "homepage": "https://twitter.com/benjsperry",
+                "role": "Designer"
+            }
+        ],
+        "description": "The premium icon font for Ionic Framework.",
+        "homepage": "http://ionicons.com/",
+        "keywords": [
+            "fonts",
+            "icon font",
+            "icons",
+            "ionic",
+            "web font"
+        ]
+    }
+]
