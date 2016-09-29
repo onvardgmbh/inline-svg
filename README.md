@@ -31,3 +31,14 @@ use Onvardgmbh\InlineSVG;
 <?= InlineSVG::ionicons('ios-arrow-right')->get()?>
 </div>
 ```
+```
+
+## width / height
+```php
+<?php
+use Onvardgmbh\InlineSVG;
+?>
+<div>
+<?= InlineSVG::ionicons('ios-search')->height('100')->width('100')->get()?>
+</div>
+```
