@@ -6,7 +6,7 @@
 use Onvardgmbh\InlineSVG;
 ?>
 <div>
-<?= InlineSVG::file( __DIR__ .'angle-right.svg')->get()?>
+<?= InlineSVG::file( __DIR__ .'/angle-right.svg')->get()?>
 </div>
 ```
 
