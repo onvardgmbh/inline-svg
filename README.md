@@ -20,7 +20,6 @@ use Onvardgmbh\InlineSVG;
 <?= InlineSVG::fontAwesome('angle-right')->get()?>
 </div>
 ```
-```
 
 ## ionicons
 Icons: [http://ionicons.com/](http://ionicons.com/)
