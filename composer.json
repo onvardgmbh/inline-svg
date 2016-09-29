@@ -18,5 +18,8 @@
     "psr-4": {
       "Onvardgmbh\\": "/"
     }
+  },
+  "require": {
+    "driftyco/ionicons": "^2.0"
   }
 }

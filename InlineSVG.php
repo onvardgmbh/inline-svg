@@ -16,7 +16,13 @@ class InlineSVG {
 
 	public static function fontAwesome( $name ) {
 		$object = new InlineSVG();
-		$object->svg = file_get_contents(__DIR__ .'/svg/' . $name . '.svg');
+		$object->svg = file_get_contents(__DIR__ .'/fontawesome/' . $name . '.svg');
+		return $object;
+	}
+
+	public static function ionicons( $name ) {
+		$object = new InlineSVG();
+		$object->svg = file_get_contents(__DIR__ .'/vendor/driftyco/ionicons/src/' . $name . '.svg');
 		return $object;
 	}
 
