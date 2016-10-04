@@ -27,12 +27,12 @@ class InlineSVG {
 	}
 
 	public function width($width) {
-		$this->svg = preg_replace('/(width=")\d*(p?x?")/', '${1}' . $width . '${2}', $this->svg);
+		$this->svg = preg_replace('/(width=")\d*(p?x?")/', '${1}' . $width . '${2}', $this->svg, 1);
 		return $this;
 	}
 
 	public function height($heigth) {
-		$this->svg = preg_replace('/(height=")\d*(p?x?")/', '${1}' . $heigth . '${2}', $this->svg);
+		$this->svg = preg_replace('/(height=")\d*(p?x?")/', '${1}' . $heigth . '${2}', $this->svg, 1);
 		return $this;
 	}
 
