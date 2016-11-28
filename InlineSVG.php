@@ -36,6 +36,11 @@ class InlineSVG {
 		return $this;
 	}
 
+    public function strokeColor($color) {
+        $this->svg = preg_replace('/(stroke:)#?\w*/', '${1}' . $color, $this->svg, -1);
+        return $this;
+    }
+
 	public function get() {
 		return $this->svg;
 	}
