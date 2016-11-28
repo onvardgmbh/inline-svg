@@ -41,3 +41,13 @@ use Onvardgmbh\InlineSVG;
 <?= InlineSVG::ionicons('ios-search')->height('100')->width('100')->get()?>
 </div>
 ```
+
+## strokeColor
+```php
+<?php
+use Onvardgmbh\InlineSVG;
+?>
+<div>
+<?= InlineSVG::file( __DIR__ .'/angle-right.svg')->strokeColor('#545454')->get()?>
+</div>
+```
