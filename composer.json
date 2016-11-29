@@ -1,0 +1,24 @@
+{
+  "name": "onvardgmbh/inline-svg",
+  "description": "Inline SVG",
+  "keywords": [
+    "svg"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/onvardgmbh/inline-svg",
+  "authors": [
+    {
+      "name": "Björn Hasse",
+      "homepage": "https://github.com/bjoernhasse",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Onvardgmbh\\": "/"
+    }
+  },
+  "require": {
+    "driftyco/ionicons": "^2.0"
+  }
+}
