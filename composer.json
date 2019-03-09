@@ -19,6 +19,8 @@
     }
   },
   "require": {
-    "driftyco/ionicons": "^2.0"
+    "driftyco/ionicons": "^2.0",
+    "fortawesome/font-awesome": "^5.7",
+    "illuminate/support": "^5.5"
   }
 }
