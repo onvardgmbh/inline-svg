@@ -60,6 +60,19 @@ class InlineSVG {
 		    ->toArray();
     }
 
+	public static function getOptionsIonicons() {
+
+		return collect(scandir(__DIR__ .'/../../driftyco/ionicons/src'))
+			->filter(function($item) {
+				return !collect(['.', '..'])->contains($item);
+			})
+			->mapWithKeys(function($item) {
+				return [ str_replace('.svg', '', $item) => str_replace('.svg', '', $item)];
+			})
+			->prepend('')
+			->toArray();
+	}
+
 	public static function getOptionsBoxicons() {
 
 		return collect(scandir(__DIR__ .'/../../atisawd/boxicons/static/img/svg'))
