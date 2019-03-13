@@ -31,6 +31,16 @@ use Onvardgmbh\InlineSVG;
 <?= InlineSVG::ionicons('ios-arrow-right')->get()?>
 </div>
 ```
+## Boxicons
+Icons: [https://boxicons.com/](https://boxicons.com/)
+```php
+<?php
+use Onvardgmbh\InlineSVG;
+?>
+<div>
+<?= InlineSVG::boxicons('bxs-rocket')->get()?>
+</div>
+```
 
 ## width / height
 ```php
@@ -52,8 +62,23 @@ use Onvardgmbh\InlineSVG;
 </div>
 ```
 
+## List of Icon Options
+You can get a list of all available icons by calling one of the following methods:
+```php
+InlineSVG::getOptionsFontAwesome();
+InlineSVG::getOptionsIonicons();
+InlineSVG::getOptionsBoxicons();
+```
+Example:
+```php
+Container::make('nav_menu', 'Menu Settings')
+         ->add_fields([
+             Field::make('select', 'crb_icon', __('Icon', 'wptheme'))
+                ->add_options(InlineSVG::getOptionsFontAwesome()),
+         ]);
+```
+
+
 ## License
 
 This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
-
-The Font Awesome svg files are taken from [encharm/Font-Awesome-SVG-PNG](https://github.com/encharm/Font-Awesome-SVG-PNG) also licensed under the MIT license.
