@@ -19,6 +19,15 @@
     }
   },
   "require": {
-    "driftyco/ionicons": "^2.0"
+    "driftyco/ionicons": "^2.0",
+    "fortawesome/font-awesome": "^5.7",
+    "illuminate/support": "^5.5",
+    "atisawd/boxicons": "^1.9"
+  },
+  "repositories": {
+    "atisawd.boxicons": {
+      "type": "vcs",
+      "url": "git@github.com:onvardgmbh/boxicons.git"
+    }
   }
 }
