@@ -16,7 +16,15 @@ class InlineSVG {
 
 	public static function fontAwesome( $name ) {
 		$object = new InlineSVG();
-		$object->svg = file_get_contents(__DIR__ .'/../../fortawesome/font-awesome/svgs/solid/' . $name . '.svg');
+
+		if (is_file(__DIR__ .'/../../fortawesome/font-awesome/svgs/solid/' . $name . '.svg')) {
+			$object->svg = file_get_contents(__DIR__ .'/../../fortawesome/font-awesome/svgs/solid/' . $name . '.svg');
+		}
+
+		if (!$object->svg && is_file(__DIR__ .'/../../fortawesome/font-awesome/svgs/brands/' . $name . '.svg')) {
+			$object->svg = file_get_contents(__DIR__ .'/../../fortawesome/font-awesome/svgs/brands/' . $name . '.svg');
+		}
+
 		return $object;
 	}
 
@@ -50,6 +58,7 @@ class InlineSVG {
     public static function getOptionsFontAwesome() {
 
 	    return collect(scandir(__DIR__ .'/../../fortawesome/font-awesome/svgs/solid'))
+		    ->merge(collect(scandir(__DIR__ .'/../../fortawesome/font-awesome/svgs/brands')))
 		    ->filter(function($item) {
 			    return !collect(['.', '..'])->contains($item);
 		    })
