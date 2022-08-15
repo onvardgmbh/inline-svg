@@ -21,7 +21,7 @@
   "require": {
     "driftyco/ionicons": "^2.0",
     "fortawesome/font-awesome": "^5.7",
-    "illuminate/support": "^5.5",
+    "illuminate/support": "^5",
     "atisawd/boxicons": "^1.9"
   },
   "repositories": {
