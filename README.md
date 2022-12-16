@@ -1,84 +1,140 @@
-# Inline SVG
 
-## File
+[![Badge License]][License]
+
+<br>
+
+<div align = center>
+
+[<img
+    src = Resources/Logo.svg
+    width = 200
+/>][#]
+
+# **Inline SVG**
+
+*A small package to insert*  
+*SVG graphics into your page*
+
+</div>
+
+<br>
+<br>
+
+## Installation
+
+*Include the following declaration in your code.*
+
 ```php
-<?php
-use Onvardgmbh\InlineSVG;
-?>
+<?php use Onvardgmbh\InlineSVG; ?>
+```
+
+<br>
+<br>
+
+## Showcase
+
+*An example using many of the available options.*
+
+```php
+<?php use Onvardgmbh\InlineSVG; ?>
+
 <div>
-<?= InlineSVG::file( __DIR__ .'/angle-right.svg')->get()?>
+    <?=  InlineSVG::ionicons('ios-search')
+            -> strokeColor('#926621')
+            -> height('200')
+            -> width('100')
+            -> get() 
+    ?>
 </div>
 ```
 
-## Font Awesome
-Icons: [http://fontawesome.io/icons/](http://fontawesome.io/icons/)
+<br>
+<br>
+
+## Sources
+
+*SVGs can be loaded from a path or vendor.*
+
+-   ### Local File
+
+    ```php
+    <?= InlineSVG::file( __DIR__ .'/angle-right.svg') ?>
+    ```
+
+-   ### **[Font Awesome]**
+
+    ```php
+    <?= InlineSVG::fontAwesome('angle-right') ?>
+    ```
+
+-   ### **[Ion Icons]**
+
+    ```php
+    <?= InlineSVG::ionicons('ios-arrow-right') ?>
+    ```
+
+-   ### **[Box Icons]**
+
+    ```php
+    <?= InlineSVG::boxicons('bxs-rocket') ?>
+    ```
+
+<br>
+<br>
+
+## Options
+
+*Available SVG transformation options.*
+
+<br>
+
+### Size
+
+```php
+<?= svg 
+    -> height('100')
+    -> width('100') ?>
+```
+
+<br>
+
+### Stroke Color
+
+```php
+<?= svg -> strokeColor('#545454') ?>
+```
+
+<br>
+<br>
+
+## Vendor Icons
+
+*You can also list the available icons.*
+
 ```php
 <?php
-use Onvardgmbh\InlineSVG;
+    InlineSVG::getOptionsFontAwesome();
+    InlineSVG::getOptionsIonicons();
+    InlineSVG::getOptionsBoxicons();
 ?>
-<div>
-<?= InlineSVG::fontAwesome('angle-right')->get()?>
-</div>
 ```
 
-## ionicons
-Icons: [http://ionicons.com/](http://ionicons.com/)
-```php
-<?php
-use Onvardgmbh\InlineSVG;
-?>
-<div>
-<?= InlineSVG::ionicons('ios-arrow-right')->get()?>
-</div>
-```
-## Boxicons
-Icons: [https://boxicons.com/](https://boxicons.com/)
-```php
-<?php
-use Onvardgmbh\InlineSVG;
-?>
-<div>
-<?= InlineSVG::boxicons('bxs-rocket')->get()?>
-</div>
-```
+[*» Check out the `/Vendor Icons.php` example.*][Example Vendor Icons]
 
-## width / height
-```php
-<?php
-use Onvardgmbh\InlineSVG;
-?>
-<div>
-<?= InlineSVG::ionicons('ios-search')->height('100')->width('100')->get()?>
-</div>
-```
-
-## strokeColor
-```php
-<?php
-use Onvardgmbh\InlineSVG;
-?>
-<div>
-<?= InlineSVG::file( __DIR__ .'/angle-right.svg')->strokeColor('#545454')->get()?>
-</div>
-```
-
-## List of Icon Options
-You can get a list of all available icons by calling one of the following methods:
-```php
-InlineSVG::getOptionsFontAwesome();
-InlineSVG::getOptionsIonicons();
-InlineSVG::getOptionsBoxicons();
-```
-Example:
-```php
-Container::make('nav_menu', 'Menu Settings')
-         ->add_fields([
-             Field::make('select', 'crb_icon', __('Icon', 'wptheme'))
-                ->add_options(InlineSVG::getOptionsFontAwesome()),
-         ]);
-```
+<br>
 
 
-## License
+<!----------------------------------------------------------------------------->
 
-This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+[Font Awesome]: https://fontawesome.io/icons/
+[Ion Icons]: https://ionicons.com/
+[Box Icons]: https://boxicons.com/
+
+[Example Vendor Icons]: Examples/Vendor%20Icons.php
+[License]: LICENSE
+[#]: #
+
+
+<!---------------------------------[ Badges ]---------------------------------->
+
+[Badge License]: https://img.shields.io/badge/License-MIT-ac8b11.svg?style=for-the-badge&labelColor=yellow
