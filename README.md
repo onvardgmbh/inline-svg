@@ -24,6 +24,8 @@
 
 *Include the following declaration in your code.*
 
+<br>
+
 ```php
 <?php use Onvardgmbh\InlineSVG; ?>
 ```
@@ -34,6 +36,8 @@
 ## Showcase
 
 *An example using many of the available options.*
+
+<br>
 
 ```php
 <?php use Onvardgmbh\InlineSVG; ?>
@@ -55,11 +59,15 @@
 
 *SVGs can be loaded from a path or vendor.*
 
+<br>
+
 -   ### Local File
 
     ```php
     <?= InlineSVG::file( __DIR__ .'/angle-right.svg') ?>
     ```
+
+    <br>
 
 -   ### **[Font Awesome]**
 
@@ -67,11 +75,15 @@
     <?= InlineSVG::fontAwesome('angle-right') ?>
     ```
 
+    <br>
+
 -   ### **[Ion Icons]**
 
     ```php
     <?= InlineSVG::ionicons('ios-arrow-right') ?>
     ```
+
+    <br>
 
 -   ### **[Box Icons]**
 
@@ -111,6 +123,8 @@
 
 *You can also list the available icons.*
 
+<br>
+
 ```php
 <?php
     InlineSVG::getOptionsFontAwesome();
@@ -118,6 +132,8 @@
     InlineSVG::getOptionsBoxicons();
 ?>
 ```
+
+<br>
 
 [*» Check out the `/Vendor Icons.php` example.*][Example Vendor Icons]
 
