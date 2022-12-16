@@ -21,6 +21,7 @@ end_of_line = lf
 
 [*.{editorconfig,gitignore,json,php,md}]
 
+trim_trailing_whitespace = true
 insert_final_newline = true
 indent_style = space
 indent_size = 4
@@ -28,4 +29,5 @@ charset = utf-8
 
 
 [*.md]
-insert_final_newline = false
+
+trim_trailing_whitespace = false
