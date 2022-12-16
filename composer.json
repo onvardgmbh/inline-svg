@@ -1,33 +1,34 @@
 {
-  "name": "onvardgmbh/inline-svg",
-  "description": "Inline SVG",
-  "keywords": [
-    "svg"
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/onvardgmbh/inline-svg",
-  "authors": [
-    {
-      "name": "Björn Hasse",
-      "homepage": "https://github.com/bjoernhasse",
-      "role": "Developer"
+    "description" : "Inline SVG" ,
+    "keywords" : [ "svg" ] ,
+    "license" : "MIT" ,
+    "name" : "onvardgmbh/inline-svg" ,
+    
+    "homepage" : "https://github.com/onvardgmbh/inline-svg" ,
+    
+    "authors" : [{
+        "name": "Björn Hasse",
+        "homepage": "https://github.com/bjoernhasse",
+        "role": "Developer"
+    }],
+    
+    "autoload" : {
+        "psr-4" : {
+            "Onvardgmbh\\" : "/"
+        }
+    },
+    
+    "require": {
+        "fortawesome/font-awesome" : "^5.7" ,
+        "illuminate/support" : "^5|^6|^7|^8|^9" ,
+        "driftyco/ionicons" : "^2.0" ,
+        "atisawd/boxicons" : "^1.9"
+    },
+    
+    "repositories" : {
+        "atisawd.boxicons" : {
+            "type" : "vcs" ,
+            "url" : "git@github.com:onvardgmbh/boxicons.git"
+        }
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Onvardgmbh\\": "/"
-    }
-  },
-  "require": {
-    "driftyco/ionicons": "^2.0",
-    "fortawesome/font-awesome": "^5.7",
-    "illuminate/support": "^5|^6|^7|^8|^9",
-    "atisawd/boxicons": "^1.9"
-  },
-  "repositories": {
-    "atisawd.boxicons": {
-      "type": "vcs",
-      "url": "git@github.com:onvardgmbh/boxicons.git"
-    }
-  }
 }
